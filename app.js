@@ -18,11 +18,16 @@ const createDB = async() => {
 
 }
 
+/**
+ * TODO: Use async funcs to CRUD 
+ */
+
 const main = async () => {
   try {
     await client.connect();
   
     await listDatabases(client);
+    // TODO: call async funcs from above in main (over here)
   
   } catch (e) {
     console.error(e);
